@@ -1,3 +1,43 @@
 # Capstone-Project
 
-In this capstone, we will predict if the Falcon 9 first stage will land successfully. SpaceX advertises Falcon 9 rocket launches on its website, with a cost of 62 million dollars; other providers cost upward of 165 million dollars each, much of the savings is because SpaceX can reuse the first stage. Therefore if we can determine if the first stage will land, we can determine the cost of a launch. This information can be used if an alternate company wants to bid against SpaceX for a rocket launch.
+This project is part of the IBM Data Science Professional Certificate Capstone on Coursera. The goal was to predict whether the Falcon 9 first stage booster will successfully land, which has significant cost implications for SpaceX and potential competitors in the space launch market.
+
+### Data Collection
+- Scraped SpaceX launch data using public APIs and `BeautifulSoup`.
+- Combined with publicly available datasets to enrich the data.
+
+### Data Wrangling
+- Cleaned and structured the dataset using `Pandas` for analysis.
+
+### Exploratory Data Analysis (EDA)
+- Performed EDA using `Matplotlib` and `Seaborn`.
+- Identified key features affecting landing outcomes.
+
+### Feature Engineering
+- Created relevant features like:
+  - Payload Mass
+  - Orbit Type
+  - Launch Site
+  - Boosters used
+  - Flight number
+
+### Machine Learning Models:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+
+### Model Evaluation
+- Evaluated models using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-Score
+
+### Hyperparameter Tuning
+- Optimized model performance using `GridSearchCV`.
+
+### Tech Stack
+- **Languages**: Python  
+- **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, BeautifulSoup  
+- **Tools**: Jupyter Notebook, APIs
